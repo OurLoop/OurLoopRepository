@@ -448,7 +448,7 @@ body{
 }
 
 #myInput {
-  background-image: url('search_icon.png');
+  background-image: url('../images/search_icon.png');
   background-size: 15px;
   background-position: 10px 5px;
   background-repeat: no-repeat;
@@ -560,7 +560,7 @@ body{
 }
 
 #myInput2 {
-  background-image: url('search_icon.png');
+  background-image: url('../images/search_icon.png');
   background-size: 15px;
   background-position: 10px 5px;
   background-repeat: no-repeat;

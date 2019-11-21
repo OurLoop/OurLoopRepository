@@ -1,43 +1,40 @@
-<html>
-   <script src="tracker.js"> </script>
-   <link rel="stylesheet" type="text/css" href="loop.css"/>
-   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
- <body>
+<html lang="en">
+    <script src="js/tracker.js"> </script>
+    <link rel="stylesheet" type="text/css" href="css/loop.css"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-   <nav aria-label="Main Navigation" role="navigation">
-     <div class="nav" id="nav">
-       <div class="icons">
-          <a class="navbutton" href="loop.html" role="go to profile">
-            <i class="material-icons" style="font-size: 70px">account_circle</i> <h2 id=navigation-text>Profile</h2> </a>
-          <a class="navbutton"  href="tracker.html" role="go to tracker" >
-            <i class="material-icons" style="font-size: 70px">timeline</i> <h2 id=navigation-text>Tracker</h2>  </a>
-          <a class="navbutton" href="loop.html" role="add mood or person">
-            <i class="material-icons" style="font-size: 70px">add_circle_outline</i> <h2 id=navigation-text>Add</h2> </a>
-          <a class="navbutton" href="loop.html" role="crisis mode" >
-            <i class="material-icons" style="font-size: 70px">warning</i> <h2 id=navigation-text>Crisis Mode</h2> </a>
-          <a class="navbutton" href="loop.html" role="settings">
-            <i class="material-icons" style="font-size: 70px">settings_applications</i> <h2 id=navigation-text>Settings</h2> </a>
-       </div>
-     </div>
-   </nav>
+    <body>
 
+        <nav aria-label="Main Navigation" role="navigation">
+            <div class="nav" id="nav">
+                <div class="icons">
+                  <a class="navbutton" href="loop.html" role="go to profile">
+                    <i class="material-icons" style="font-size: 70px">account_circle</i> <h2 id=navigation-text>Profile</h2> </a>
+                  <a class="navbutton"  href="tracker.html" role="go to tracker" >
+                    <i class="material-icons" style="font-size: 70px">timeline</i> <h2 id=navigation-text>Tracker</h2>  </a>
+                  <a class="navbutton" href="loop.html" role="add mood or person">
+                    <i class="material-icons" style="font-size: 70px">add_circle_outline</i> <h2 id=navigation-text>Add</h2> </a>
+                  <a class="navbutton" href="loop.html" role="crisis mode" >
+                    <i class="material-icons" style="font-size: 70px">warning</i> <h2 id=navigation-text>Crisis Mode</h2> </a>
+                  <a class="navbutton" href="loop.html" role="settings">
+                    <i class="material-icons" style="font-size: 70px">settings_applications</i> <h2 id=navigation-text>Settings</h2> </a>
+                </div>
+            </div>
+        </nav>
 
    <div id="screen">
      <header role="banner" class="header" aria-label="Header">
         <div class="logo_loop">
-             <b> <img src="loop.png" width="170px" height="170px" alt="Loop logo"></b>
+             <b> <img src="images/loop.png" width="170px" height="170px" alt="Loop logo"></b>
         </div>
       </header>
-
-   <main role="main" id="main" aria-label="Main Body" id="main">
-
-       <div class="page_name">
-           <h1 class="welcome">
-               <p><p>Mood Tracker: November
-           </h1>
-       </div>
-
+        <main role="main" id="main" aria-label="Main Body" id="main">
+           <div class="page_name">
+               <h1 class="welcome">
+                   <p><p>Mood Tracker: November
+               </h1>
+           </div>
        <div class="slider2" style="height:100px;">
             <input type="range" min="0" max="4" value="3" id="slider" role="Mood slider" disabled="true">
             <i class="material-icons" id="emoji" role="Mood emoji"> sentiment_satisfied_alt </i>
@@ -123,5 +120,5 @@
             </div>
           </div>
         </article>
- </body>
+    </body>
 </html>
