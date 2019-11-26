@@ -1,0 +1,93 @@
+<html lang="en">
+    <script src="tracker.js"> </script>
+    <link rel="stylesheet" type="text/css" href="loop.css"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <body>
+
+      <nav aria-label="Main Navigation" role="navigation">
+      <div class="nav" id="nav">
+        <div class="icons">
+           <a class="navbutton" href="myloops.html" role="go to loops">
+             <i id="navicon" class="material-icons" style="font-size: 70px">account_circle</i> <h2 id=navigation-text>Loops</h2> </a>
+             <a class="navbutton"  href="tracker.html" role="go to tracker" >
+               <i id="navicon" class="material-icons" style="font-size: 70px">timeline</i> <h2 id=navigation-text>Tracker</h2>  </a>
+           <a class="navbutton" href="loop.html" role="add mood or person" >
+             <i id="navicon" class="material-icons" style="font-size: 70px">add_circle_outline</i> <h2 id=navigation-text>Add</h2> </a>
+           <a class="navbutton" href="loop.html" role="crisis mode" >
+             <i id="navicon" class="material-icons" style="font-size: 70px">warning</i> <h2 id=navigation-text>Crisis Mode</h2> </a>
+           <a class="navbutton" href="loop.html" role="settings">
+             <i id="navicon" class="material-icons" style="font-size: 70px">settings_applications</i> <h2 id=navigation-text>Settings</h2> </a>
+        </div>
+      </div>
+     </nav>
+
+   <div id="screen">
+
+     <header role="banner" class="header" aria-label="Header">
+        <div class="logo_loop">
+             <b> <img src="loop.png" width="170px" height="170px" alt="Loop logo"></b>
+        </div>
+      </header>
+
+      <main role="main" id="main" aria-label="Main Body" id="main">
+
+           <article>
+              <caption> <h1 id="cf-title">My Friends</h1> </caption>
+              <div class= "cf-table">
+                   <div class="circle-cf2">
+
+                      <input type="text" id="myInput3" onkeyup="myFunction3()" placeholder="Search..." title="Type in a feeling" role="search feelings">
+
+
+
+                      <table id="myTable3" cellpadding="0" cellspacing="0" border="0">
+                        <tr class="tbl-header">
+                          <th style="width:20%;"></th>
+                          <th style="width:20%;">Name</th>
+                          <th style="width:20%;">Mood</th>
+                          <th style="width:20%;">Feeling</th>
+                          <th style="width:20%;">Factor</th>
+                        </tr>
+                        <tr>
+                          <td> <img src="cf6.png" alt="Profile Picture Kate" class="picturefriend2"></td>
+                          <td>Kate</td>
+                          <td><i id="friendmood" class="material-icons" role="Mood emoji"> sentiment_dissatisfied </i></td>
+                          <td>Anxious</td>
+                          <td>Relationships</td>
+                        </tr>
+                        <tr>
+                          <td> <img src="cf2.png" alt="Profile Picture Jake" class="picturefriend2"></td>
+                          <td>Jake</td>
+                          <td><i id="friendmood" class="material-icons" role="Mood emoji"> sentiment_very_satisfied </i></td>
+                          <td>Happy</td>
+                          <td>Career</td>
+                        </tr>
+                        <tr>
+                          <td> <img src="cf3.png" alt="Profile Picture Diego" class="picturefriend2"> </td>
+                          <td>Diego</td>
+                          <td><i id="friendmood" class="material-icons" role="Mood emoji"> sentiment_very_dissatisfied </i></td>
+                          <td>Sad</td>
+                          <td>Academic</td>
+                        </tr>
+                        <tr>
+                          <td>  <img src="cf4.png" alt="Profile Picture Nicole" class="picturefriend2"></td>
+                          <td>Nicole</td>
+                          <td><i id="friendmood" class="material-icons" role="Mood emoji"> mood_bad </i></td>
+                          <td>Anxious</td>
+                          <td>Social</td>
+                        </tr>
+                        <tr>
+                          <td>  <img src="cf5.png" alt="Profile Picture Matt" class="picturefriend2"></td>
+                          <td>Matt</td>
+                          <td><i id="friendmood" class="material-icons" role="Mood emoji"> sentiment_satisfied </i></td>
+                          <td>Neutral</td>
+                          <td>Home</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+              </article>
+    </body>
+</html>
