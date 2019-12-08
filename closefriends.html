@@ -1,6 +1,6 @@
 <html lang="en">
-    <script src="tracker.js"> </script>
-    <link rel="stylesheet" type="text/css" href="loop.css"/>
+    <script src="js/tracker.js"> </script>
+    <link rel="stylesheet" type="text/css" href="css/loop.css"/>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -27,22 +27,20 @@
 
      <header role="banner" class="header" aria-label="Header">
         <div class="logo_loop">
-             <b> <img src="loop.png" width="170px" height="170px" alt="Loop logo"></b>
+             <b> <img src="pictures/loop.png" width="170px" height="170px" alt="Loop logo"></b>
         </div>
       </header>
 
       <main role="main" id="main" aria-label="Main Body" id="main">
 
            <article>
-              <caption> <h1 id="cf-title">My Friends</h1> </caption>
+              <caption> <h1 id="cf-title">My Close Friends</h1> </caption>
               <div class= "cf-table">
-                   <div class="circle-cf2">
+                   <div class="circle-cf">
 
-                      <input type="text" id="myInput3" onkeyup="myFunction3()" placeholder="Search..." title="Type in a feeling" role="search feelings">
+                      <input type="text" id="myInput5" onkeyup="myFunction5()" placeholder="Search..." title="Type in a feeling" role="search feelings">
 
-
-
-                      <table id="myTable3" cellpadding="0" cellspacing="0" border="0">
+                      <table id="myTable5" cellpadding="0" cellspacing="0" border="0">
                         <tr class="tbl-header">
                           <th style="width:20%;"></th>
                           <th style="width:20%;">Name</th>
@@ -51,39 +49,32 @@
                           <th style="width:20%;">Factor</th>
                         </tr>
                         <tr>
-                          <td> <img src="cf6.png" alt="Profile Picture Kate" class="picturefriend2"></td>
-                          <td>Kate</td>
-                          <td><i id="friendmood" class="material-icons" role="Mood emoji"> sentiment_dissatisfied </i></td>
-                          <td>Anxious</td>
-                          <td>Relationships</td>
+                          <td> <img src="pictures/friend1.png" alt="Profile Picture Sam" class="picturefriend2"></td>
+                          <td>Sam</td>
+                          <td><i id="friendmood" class="material-icons" role="Mood emoji"> sentiment_satisfied </i></td>
+                          <td>Calm</td>
+                          <td>Health</td>
                         </tr>
                         <tr>
-                          <td> <img src="cf2.png" alt="Profile Picture Jake" class="picturefriend2"></td>
-                          <td>Jake</td>
+                          <td> <img src="pictures/friend2.png" alt="Profile Picture Laura" class="picturefriend2"></td>
+                          <td>Laura</td>
                           <td><i id="friendmood" class="material-icons" role="Mood emoji"> sentiment_very_satisfied </i></td>
                           <td>Happy</td>
-                          <td>Career</td>
+                          <td>None</td>
                         </tr>
                         <tr>
-                          <td> <img src="cf3.png" alt="Profile Picture Diego" class="picturefriend2"> </td>
-                          <td>Diego</td>
+                          <td> <img src="pictures/friend3.png" alt="Profile Picture Jonathan" class="picturefriend2"> </td>
+                          <td>Jonathan</td>
                           <td><i id="friendmood" class="material-icons" role="Mood emoji"> sentiment_very_dissatisfied </i></td>
                           <td>Sad</td>
                           <td>Academic</td>
                         </tr>
                         <tr>
-                          <td>  <img src="cf4.png" alt="Profile Picture Nicole" class="picturefriend2"></td>
-                          <td>Nicole</td>
+                          <td>  <img src="pictures/friend4.png" alt="Profile Picture Jenny" class="picturefriend2"></td>
+                          <td>Jenny</td>
                           <td><i id="friendmood" class="material-icons" role="Mood emoji"> mood_bad </i></td>
                           <td>Anxious</td>
                           <td>Social</td>
-                        </tr>
-                        <tr>
-                          <td>  <img src="cf5.png" alt="Profile Picture Matt" class="picturefriend2"></td>
-                          <td>Matt</td>
-                          <td><i id="friendmood" class="material-icons" role="Mood emoji"> sentiment_satisfied </i></td>
-                          <td>Neutral</td>
-                          <td>Home</td>
                         </tr>
                       </table>
                     </div>

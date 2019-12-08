@@ -3,30 +3,40 @@
 <html>
 <html lang = "en">
   <header role="banner" class="header">
-    <link rel="stylesheet" type="text/css" href="loop.css"/>
+    <link rel="stylesheet" type="text/css" href="css/loop.css"/>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
        rel="stylesheet">
   </header>
   <body>
 
-      <nav aria-label="Main Navigation" role="navigation">
-      <div class="nav" id="nav">
-        <div class="icons">
-           <i class="material-icons" role="go to profile" style="font-size: 70px">account_circle</i>
-           <i class="material-icons" role="go to tracker" style="font-size: 70px">timeline</i>
-           <i class="material-icons" role="add mood or person" style="font-size: 70px">add_circle_outline</i>
-           <i class="material-icons" role="crisis mode" style="font-size: 70px">warning</i>
-           <i class="material-icons" role="settings" style="font-size: 70px">settings_applications</i>
-        </div>
+    <nav aria-label="Main Navigation" role="navigation">
+    <div class="nav" id="nav">
+      <div class="icons">
+         <a class="navbutton" href="myloops.html" role="go to loops">
+           <i id="navicon" class="material-icons" style="font-size: 70px">account_circle</i> <h2 id=navigation-text>Loops</h2> </a>
+           <a class="navbutton"  href="tracker.html" role="go to tracker" >
+             <i id="navicon" class="material-icons" style="font-size: 70px">timeline</i> <h2 id=navigation-text>Tracker</h2>  </a>
+         <a class="navbutton" href="loop.html" role="add mood or person" >
+           <i id="navicon" class="material-icons" style="font-size: 70px">add_circle_outline</i> <h2 id=navigation-text>Update Mood</h2> </a>
+         <a class="navbutton" href="loop.html" role="crisis mode" >
+           <i id="navicon" class="material-icons" style="font-size: 70px">warning</i> <h2 id=navigation-text>Crisis Mode</h2> </a>
+         <a class="navbutton" href="loop.html" role="settings">
+           <i id="navicon" class="material-icons" style="font-size: 70px">settings_applications</i> <h2 id=navigation-text>Settings</h2> </a>
       </div>
-     </nav>
+    </div>
+   </nav>
 
     <main role="main" id="main" aria-label="Main Body" >
       <div id="screen">
 
-        <div class="mood_changer">
+        <div class="logo_loop">
+            <b> <img src="pictures/loop.png" width="170px" height="170px" alt="Loop logo"></b>
+        </div>
+
+
+        <div class="page_name">
             <h1 class="welcome">
-                <p><p>Welcome, John! How are you feeling today?
+                <p><p>Tell us more about your day.
             </h1>
         </div>
 
@@ -51,7 +61,7 @@
 <div class="circle2">
      <div class="circle-out">
          <div class="circle-in">
-             <h2 class="text-inside-circle">Choose your biggest stressors:</h2>
+             <h2 class="text-inside-circle">Affecting factors:</h2>
              <div class="stressors">
                  <button class="small-circles" id="school" onclick="checkColor(6, 'school')" role="School stressor"><i class="material-icons" style="font-size: 40px; margin:10px;"> school </i></button>
                  <button class="small-circles" id="social" onclick="checkColor(7, 'social')" role="Social stressor"><i class="material-icons" style="font-size: 40px; margin:10px;"> group </i></button>
@@ -85,8 +95,18 @@
 </div>
 
 
+      <div id="popup1" class="overlay">
+        <div class="popup">
+          <h2>Success!</h2>
+          <a class="close" href="myloops.html">&times;</a>
+          <div class="content" id="notification">
+            Your mood for today has been updated and a notification to your selected group was sent.
+          </div>
+        </div>
+      </div>
+
 </body>
 </main>
 
-<script src="loop.js"> </script>
+<script src="js/loop.js"> </script>
 </html>
