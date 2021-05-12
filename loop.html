@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+<html lang = "en">
+  <header role="banner" class="header">
+    <link rel="stylesheet" type="text/css" href="css/loop.css"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+       rel="stylesheet">
+  </header>
+  <body>
+
+    <nav aria-label="Main Navigation" role="navigation">
+    <div class="nav" id="nav">
+      <div class="icons">
+         <a class="navbutton" href="myloops.html" role="go to loops">
+           <i id="navicon" class="material-icons" style="font-size: 70px">account_circle</i> <h2 id=navigation-text>Loops</h2> </a>
+           <a class="navbutton"  href="tracker.html" role="go to tracker" >
+             <i id="navicon" class="material-icons" style="font-size: 70px">timeline</i> <h2 id=navigation-text>Tracker</h2>  </a>
+         <a class="navbutton" href="loop.html" role="add mood or person" >
+           <i id="navicon" class="material-icons" style="font-size: 70px">add_circle_outline</i> <h2 id=navigation-text>Update Mood</h2> </a>
+         <a class="navbutton" href="loop.html" role="crisis mode" >
+           <i id="navicon" class="material-icons" style="font-size: 70px">warning</i> <h2 id=navigation-text>Crisis Mode</h2> </a>
+         <a class="navbutton" href="loop.html" role="settings">
+           <i id="navicon" class="material-icons" style="font-size: 70px">settings_applications</i> <h2 id=navigation-text>Settings</h2> </a>
+      </div>
+    </div>
+   </nav>
+
+  <main role="main" id="main" aria-label="Main Body" >
+    <div id="screen">
+
+      <div class="logo_loop">
+          <b> <img src="pictures/loop.png" width="170px" height="170px" alt="Loop logo"></b>
+      </div>
+
+      <div class="page_name">
+          <h1 class="welcome">
+              <p><p>Welcome, John! How are you feeling today?
+          </h1>
+      </div>
+
+      <div class="profile-pic">
+          <b> <img src="pictures/guy.png" width="170px" height="170px" alt="Profile Picture MAN" class="picture"></b>
+      </div>
+
+      <div class="container" style="height:100px;">
+          <input type="range" min="0" max="4" value="2" id="slider" role="Mood slider">
+          <i class="material-icons" id="emoji" role="Mood emoji"> sentiment_satisfied </i>
+      </div>
+
+      <div class="next">
+        <a class="next_mood" href="loop_2.html" role="Next set mood screen"><i class="material-icons" style="font-size: 50px"> navigate_next </i>
+</i></a>
+      </div>
+
+  </body>
+ </main>
+
+  <script src="js/loop.js"> </script>
+</html>
