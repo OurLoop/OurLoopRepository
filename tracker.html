@@ -1,0 +1,127 @@
+<html>
+   <script src="tracker.js"> </script>
+   <link rel="stylesheet" type="text/css" href="loop.css"/>
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+ <body>
+
+   <nav aria-label="Main Navigation" role="navigation">
+   <div class="nav" id="nav">
+     <div class="icons">
+        <a class="navbutton" href="myloops.html" role="go to loops">
+          <i id="navicon" class="material-icons" style="font-size: 70px">account_circle</i> <h2 id=navigation-text>Loops</h2> </a>
+          <a class="navbutton"  href="tracker.html" role="go to tracker" >
+            <i id="navicon" class="material-icons" style="font-size: 70px">timeline</i> <h2 id=navigation-text>Tracker</h2>  </a>
+        <a class="navbutton" href="loop.html" role="add mood or person" >
+          <i id="navicon" class="material-icons" style="font-size: 70px">add_circle_outline</i> <h2 id=navigation-text>Update Mood</h2> </a>
+        <a class="navbutton" href="loop.html" role="crisis mode" >
+          <i id="navicon" class="material-icons" style="font-size: 70px">warning</i> <h2 id=navigation-text>Crisis Mode</h2> </a>
+        <a class="navbutton" href="loop.html" role="settings">
+          <i id="navicon" class="material-icons" style="font-size: 70px">settings_applications</i> <h2 id=navigation-text>Settings</h2> </a>
+     </div>
+   </div>
+  </nav>
+
+
+   <div id="screen2">
+     <header role="banner" class="header" aria-label="Header">
+        <div class="logo_loop">
+            <img src="loop.png" width="170px" height="170px" alt="Loop logo"></b>
+        </div>
+      </header>
+
+   <main role="main" id="main" aria-label="Main Body" id="main">
+
+       <div class="page_name">
+           <h1 class="welcome">
+               <p><p>Mood Tracker: November
+           </h1>
+       </div>
+
+       <div class="slider2" style="height:100px;">
+            <input type="range" min="0" max="4" value="3" id="slider" role="Mood slider" disabled="true">
+            <i class="material-icons" id="emoji" role="Mood emoji"> sentiment_satisfied_alt </i>
+       </div>
+
+       <h2 class="subtitle">
+          <p><p><p><p>Average daily mood in November
+       </h2>
+   <article>
+      <caption> <h1 id="feelings-title">Feelings</h1> </caption>
+      <div class= "feelings-table">
+         <div class="circle-out2">
+           <div class="circle-in2">
+
+              <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search..." title="Type in a feeling" role="search feelings">
+
+              <table id="myTable" cellpadding="0" cellspacing="0" border="0">
+                <tr class="tbl-header">
+                  <th style="width:75%;">Feeling</th>
+                  <th style="width:25%;">Days</th>
+                </tr>
+                <tr>
+                  <td>Anxious</td>
+                  <td>5</td>
+                </tr>
+                <tr>
+                  <td>Neutral</td>
+                  <td>15</td>
+                </tr>
+                <tr>
+                  <td>Sad</td>
+                  <td>7</td>
+                </tr>
+                <tr>
+                  <td>Happy</td>
+                  <td>9</td>
+                </tr>
+                <tr>
+                  <td>Calm</td>
+                  <td>6</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article>
+        <caption><h1 id="stressors-title">Factors</h1></caption>
+        <div class= "stressors-table">
+           <div class="circle-out2">
+             <div class="circle-in2">
+
+                <input type="text" id="myInput2" onkeyup="myFunction2()" placeholder="Search..." title="Type in a stressor" role="search stressors">
+
+                <table id="myTable2" cellpadding="0" cellspacing="0" border="0">
+                  <tr class="tbl-header">
+                    <th style="width:75%;">Factors</th>
+                    <th style="width:25%;">Days</th>
+                  </tr>
+                  <tr>
+                    <td>Academic</td>
+                    <td>16</td>
+                  </tr>
+                  <tr>
+                    <td>Social</td>
+                    <td>7</td>
+                  </tr>
+                  <tr>
+                    <td>Relationship</td>
+                    <td>5</td>
+                  </tr>
+                  <tr>
+                    <td>Home</td>
+                    <td>10</td>
+                  </tr>
+                  <tr>
+                    <td>Health</td>
+                    <td>20</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </article>
+ </body>
+</html>
